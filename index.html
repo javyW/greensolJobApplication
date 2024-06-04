@@ -10,7 +10,6 @@
 
     <h1>Greensol Job Application Form <span class="title"></span></h1>
 
-
         <div class="Personal-information">
         <form>
             <h3>Personal Information</h3>
@@ -60,11 +59,11 @@
     </div>
 
 
-    <div class="education">
+    <div class="Education">
         <form>
             <h3>Education</h3>
             <label for="Education">Highest Level of Education:</label>
-            <select id="education" name="education" required>
+            <select id="Education" name="education" required>
             <option value="">Select</option>
             <option value="high_school">High School</option>
             <option value="associates_degree">Associate's Degree</option>
@@ -82,6 +81,36 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+
+
+    <div class="Work Experience">
+        <form>
+            <h3>Work Experience</h3>
+            <div class="work-experience">
+                <label for="company_name">Company Name:</label>
+                <input type="text" id="company_name" name="company_name" required><br>
+              
+                <label for="job_title">Job Title:</label>
+                <input type="text" id="job_title" name="job_title" required><br>
+              
+                <label for="start_date">Start Date:</label>
+                <input type="date" id="start_date" name="start_date" required><br>
+              
+                <label for="end_date">End Date (or leave blank if currently employed):</label>
+                <input type="date" id="end_date" name="end_date"><br>
+              
+                <label for="responsibilities">Job Responsibilities:</label>
+                <textarea id="responsibilities" name="responsibilities" rows="5" required></textarea><br>
+              
+                <label for="currently_employed">Currently Employed Here:</label>
+                <input type="checkbox" id="currently_employed" name="currently_employed">
+              
+        </form>
+    </div>
+
+    
+
+
 
 </body>
 </html>
