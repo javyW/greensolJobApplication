@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Greensol Job Application Form <span class="title"></span></h1>
+
 
         <div class="Personal-information">
         <form>
@@ -29,15 +31,40 @@
             <input type="radio" id="gender" name="gender">Female<br>
             <input type="radio" id="gender" name="gender">Non Binary<br>
 
-            <label for="Pfp">Please upload an appropriate Profile Picture</label><br>
+            <label for="Pfp">Profile Picture: </label>
             <input type="file" name="media">
         </form>
     </div>
 
+
     <div class="Address">
-        
+        <form>
+            <h3>Address</h3>
+            <label for="address">Address:</label>
+            <label for="street">Street Address:</label>
+            <input type="text" id="street" name="street" required><br>
+
+            <label for="apt">Apartment Number (optional):</label>
+            <input type="text" id="apt" name="apt"><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br>
+
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" required><br>
+
+        </form>
     </div>
 
+
+    <div class="education">
+        <form>
+            <h3>Education</h3>
+        </form>
+    </div>
 
 </body>
 </html>
