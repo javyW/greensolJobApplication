@@ -111,7 +111,6 @@
     <div class="skills">
         <form>
             <h3>Skills</h3>
-            <div class="skills">
             <label for="skill_html">HTML</label>
             <input type="checkbox" id="skill_html" name="skills[]" value="html"><br>
 
@@ -135,13 +134,59 @@
 
             <label for="skill_other">Other:</label>
             <input type="text" id="skill_other" name="skill_other">
-            </div>
         </form>
-
-
-        <div class=""
-
     </div>
+
+    <div class="availabillity">
+        <form>
+            <h3>Availability</h3>
+
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required><br>
+
+            <label for="preferred_hours">Preferred Working Hours:</label>
+            <input type="time" id="preferred_hours" name="preferred_hours" required><br>
+
+            <label for="work_location">Preferred Work Location:</label>
+            <br>
+            <input type="radio" id="work_location_remote" name="work_location" value="remote">
+            <label for="work_location_remote">Remote</label>
+
+            <input type="radio" id="work_location_onsite" name="work_location" value="onsite">
+            <label for="work_location_onsite">On-site</label>
+
+            <input type="radio" id="work_location_hybrid" name="work_location" value="hybrid">
+            <label for="work_location_hybrid">Hybrid</label>
+    </form>
+    </div>
+
+    <div class="">
+        <form>
+            <h2>References</h2>  
+            <label for="reference_name">Reference Name:</label>
+            <input type="text" id="reference_name" name="references[0][name]" required><br>
+          
+            <label for="reference_relationship">Relationship:</label>
+            <input type="text" id="reference_relationship" name="references[0][relationship]" required><br>
+          
+            <label for="reference_phone">Phone Number:</label>
+            <input type="tel" id="reference_phone" name="references[0][phone_number]"><br>
+          
+            <label for="reference_email">Email Address:</label>
+            <input type="email" id="reference_email" name="references[0][email_address]" required><br>
+          </div>
+            <label for="reference_name2">Reference Name:</label>
+            <input type="text" id="reference_name2" name="references[1][name]" required><br>
+        </form>
+    </div>
+
+    <div class="">
+        <form>
+            <h2>Additional Information</h2>
+        </form>
+    </div>
+
+    <button type="submit">Submit Application</button>
 
 
 
