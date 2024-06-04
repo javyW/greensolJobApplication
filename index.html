@@ -35,7 +35,6 @@
         </form>
     </div>
 
-
     <div class="Address">
         <form>
             <h3>Address</h3>
@@ -64,6 +63,7 @@
             <h3>Education</h3>
             <label for="Education">Highest Level of Education:</label>
             <select id="Education" name="education" required>
+
             <option value="">Select</option>
             <option value="high_school">High School</option>
             <option value="associates_degree">Associate's Degree</option>
@@ -183,9 +183,29 @@
     <div class="">
         <form>
             <h2>Additional Information</h2>
+            <label for="linkedin_profile">LinkedIn Profile URL:</label>
+            <input type="url" id="linkedin_profile" name="linkedin_profile"><br>
+            
+            <label for="github_profile">GitHub Profile URL:</label>
+            <input type="url" id="github_profile" name="github_profile"><br>
+
+            <textarea id="why_work_here" name="why_work_here" rows="5"></textarea><br>
+            <label for="why_work_here">Why Do You Want to Work Here?:</label>
+
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx"><br>
+            <label for="resume">Upload Resume:</label>
+
+            <input type="checkbox" id="background_check" name="background_check">
+            <label for="background_check">Consent to Background Check:</label>
+
+            <input type="checkbox" id="job_alerts" name="job_alerts">
+            <label for="job_alerts">Sign Up for Job Alerts:</label>
+
+            <label for="interest_level">Rate Your Interest in this Position (1-10):</label>
+            <input type="range" min="1" max="10" value="5" id="interest_level" name="interest_level">
+            <button type="submit">Submit Application</button>
         </form>
     </div>
-
     <button type="submit">Submit Application</button>
 
 

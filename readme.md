@@ -1,0 +1,2 @@
+## Greensol Job Application Form
+This repository contains the code for a job application form for greensol. The form is designed to collect a wide range of information from applicants, utilizing various HTML input elements.
