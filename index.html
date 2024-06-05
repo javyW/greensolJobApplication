@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="container">
     <h1>Greensol Job Application Form <span class="title"></span></h1>
 
-        <div class="personal-information">
+        <div class="defaultsection">
         <form>
             <h3>Personal Information</h3>
             <label for="Fname">First name:</label>
@@ -35,7 +35,7 @@
         </form>
     </div>
 
-    <div class="address">
+    <div class="defaultsection">
         <form>
             <h3>Address</h3>
             <label for="address">Address:</label>
@@ -58,7 +58,7 @@
     </div>
 
 
-    <div class="education">
+    <div class="defaultsection">
         <form>
             <h3>Education</h3>
             <label for="Education">Highest Level of Education:</label>
@@ -83,7 +83,7 @@
     </div>
 
 
-    <div class="work-experience">
+    <div class="defaultsection">
         <form>
             <h3>Work Experience</h3>
             <div class="work-experience">
@@ -108,7 +108,7 @@
         </form>
     </div>
 
-    <div class="skills">
+    <div class="defaultsection">
         <form>
             <h3>Skills</h3>
             <label for="skill_html">HTML</label>
@@ -137,7 +137,7 @@
         </form>
     </div>
 
-    <div class="availabillity">
+    <div class="defaultsection">
         <form>
             <h3>Availability</h3>
 
@@ -157,10 +157,10 @@
 
             <input type="radio" id="work_location_hybrid" name="work_location" value="hybrid">
             <label for="work_location_hybrid">Hybrid</label>
-    </form>
+        </form>
     </div>
 
-    <div class="references">
+    <div class="defaultsection">
         <form>
             <h2>References</h2>  
             <label for="reference_name">Reference Name:</label>
@@ -174,13 +174,13 @@
           
             <label for="reference_email">Email Address:</label>
             <input type="email" id="reference_email" name="references[0][email_address]" required><br>
-          </div>
+          
             <label for="reference_name2">Reference Name:</label>
             <input type="text" id="reference_name2" name="references[1][name]" required><br>
         </form>
     </div>
 
-    <div class="additional-information">
+    <div class="defaultsection">
         <form>
             <h2>Additional Information</h2>
             <label for="linkedin_profile">LinkedIn Profile URL:</label>
@@ -206,6 +206,6 @@
         </form>
     </div>
     <button type="submit">Submit Application</button>
-
+</div>
 </body>
 </html>
