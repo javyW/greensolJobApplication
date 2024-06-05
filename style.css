@@ -1,3 +1,15 @@
 * {
-    text-align: center;
+    text-align: left;
 }
+
+h1{
+    font-size: 300%
+    
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: gainsboro;
+
+}
+
