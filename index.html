@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Greensol Job Application Form <span class="title"></span></h1>
+    <center><h1>Greensol Job Application Form</h1></center>
     <br>
     <hr>
 
@@ -19,19 +19,19 @@
             <input type="text" id="fname" name="fname"><br>
 
             <label for="Lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br>
+            <input type="text" id="lname" name="Lname"><br>
     
             <label for="Tel">Phone number:</label>
             <input type="number" id="tel" name="tel"><br>
             
             <label for="Dob">Date of birth:</label>
-            <input type="date" id="dob" name="dob"><br>
+            <input type="date" id="ob" name="dob"><br>
 
             <label for="Gender">Choose your Gender:</label><br>
             <input type="radio" id="gender" name="gender">Male<br>
             <input type="radio" id="gender" name="gender">Female<br>
             <input type="radio" id="gender" name="gender">Non Binary<br>
-
+            <br>
             <label for="Pfp">Profile Picture: </label>
             <input type="file" name="media">
         </form>
@@ -40,15 +40,14 @@
     <div class="defaultsection">
         <form>
             <h3>Address</h3>
-            <label for="address">Address:</label>
-            <label for="street">Street Address:</label>
+            <label for="Street">Street Address:</label>
             <input type="text" id="street" name="street" required><br>
 
             <label for="apt">Apartment Number (optional):</label>
             <input type="text" id="apt" name="apt"><br>
 
             <label for="city">City:</label>
-            <input type="text" id="city" name="city" required><br>
+            <input type="text" id="city" name="ity" required><br>
 
             <label for="state">State:</label>
             <input type="text" id="state" name="state" required><br>
@@ -80,7 +79,6 @@
             <label for="graduation_year">Graduation Year:</label>
             <input type="number" id="graduation_year" name="graduation_year" required><br>
 
-            <button type="submit">Submit</button>
         </form>
     </div>
 
@@ -104,35 +102,35 @@
             <label for="responsibilities">Job Responsibilities:</label>
             <textarea id="responsibilities" name="responsibilities" rows="5" required></textarea><br>
               
-            <label for="currently_employed">Currently Employed Here:</label>
-            <input type="checkbox" id="currently_employed" name="currently_employed">
-              
+            <label for="currently_employed">Currently Employed Here:</label><br>
+            <input type="radio" id="employed" name="Yes">Yes<br>
+            <input type="radio" id="employed" name="No">No<br><hr>
         </form>
     </div>
 
-    <div class="defaultsection">
+    <div class="skillssection">
         <form>
-            <h3>Skills</h3>
+            <h4>Skills</h4>
             <label for="skill_html">HTML</label>
-            <input type="checkbox" id="skill_html" name="skills[]" value="html"><br>
+            <input type="checkbox" id="skill_html" name="skills" value="html"><br>
 
             <label for="skill_css">CSS</label>
-            <input type="checkbox" id="skill_css" name="skills[]" value="css"><br>
+            <input type="checkbox" id="skill_css" name="skills" value="css"><br>
 
             <label for="skill_javascript">JavaScript</label>
-            <input type="checkbox" id="skill_javascript" name="skills[]" value="javascript"><br>
+            <input type="checkbox" id="skill_javascript" name="skills" value="javascript"><br>
 
             <label for="skill_python">Python</label>
-            <input type="checkbox" id="skill_python" name="skills[]" value="python"><br>
+            <input type="checkbox" id="skill_python" name="skills" value="python"><br>
 
             <label for="skill_java">Java</label>
-            <input type="checkbox" id="skill_java" name="skills[]" value="java"><br>
+            <input type="checkbox" id="skill_java" name="skills" value="java"><br>
 
             <label for="skill_csharp">C#</label>
-            <input type="checkbox" id="skill_csharp" name="skills[]" value="csharp"><br>
+            <input type="checkbox" id="skill_csharp" name="skills" value="csharp"><br>
 
             <label for="skill_sql">SQL</label>
-            <input type="checkbox" id="skill_sql" name="skills[]" value="sql"><br>
+            <input type="checkbox" id="skill_sql" name="skills" value="sql"><br>
 
             <label for="skill_other">Other Languages:</label>
             <input type="text" id="skill_other" name="skill_other">
@@ -142,23 +140,23 @@
     <div class="defaultsection">
         <form>
             <h3>Availability</h3>
-
             <label for="start_date">Start Date:</label>
             <input type="date" id="start_date" name="start_date" required><br>
 
             <label for="preferred_hours">Preferred Working Hours:</label>
-            <input type="time" id="preferred_hours" name="preferred_hours" required><br>
+            <input type="text" id="preferred_hours" name="preferred_hours" required><br>
 
-            <label for="work_location">Preferred Work Location:</label>
-            <br>
-            <input type="radio" id="work_location_remote" name="work_location" value="remote">
+            <label for="work_location">Preferred Work Location:</label> 
+            <input type="text" id="preferred_location" name="preferred_location" required><br>
+
             <label for="work_location_remote">Remote</label>
+            <input type="radio" id="work_location_onsite" name="work_location" value="remote">
 
-            <input type="radio" id="work_location_onsite" name="work_location" value="onsite">
             <label for="work_location_onsite">On-site</label>
+            <input type="radio" id="work_location_hybrid" name="work_location" value="on-sight">
 
-            <input type="radio" id="work_location_hybrid" name="work_location" value="hybrid">
             <label for="work_location_hybrid">Hybrid</label>
+            <input type="radio" id="work_location_hybrid" name="work_location" value="hybrid">
         </form>
     </div>
 
@@ -178,7 +176,7 @@
             <input type="email" id="reference_email" name="references[0][email_address]" required><br>
           
             <label for="reference_name2">Reference Name:</label>
-            <input type="text" id="reference_name2" name="references[1][name]" required><br>
+            <input type="text" id="reference_name2" name="references[1][name]" required>
         </form>
     </div>
 
@@ -191,23 +189,24 @@
             <label for="github_profile">GitHub Profile URL:</label>
             <input type="url" id="github_profile" name="github_profile"><br>
 
-            <label for="why_work_here">Why Do You Want to Work Here?:</label><br>
+            <label for="why_work_here">Why Do You Want to Work Here?:</label>
             <textarea id="why_work_here" name="why_work_here" rows="5"></textarea><br>
 
-            <input type="file" id="resume" name="resume" accept=".pdf,.docx"><br>
-            <label for="resume">Upload Resume:</label>
+            <label for="resume">Upload Resume: </label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx">
 
+            <label for="background_check">Consent to Background Check:</label>
             <input type="checkbox" id="background_check" name="background_check">
-            <label for="background_check">Consent to Background Check:</label><br>
-
+            
+            <label for="job_alerts">Sign Up for Job Alerts:</label>
             <input type="checkbox" id="job_alerts" name="job_alerts">
-            <label for="job_alerts">Sign Up for Job Alerts:</label><br>
 
-            <label for="interest_level">Rate Your Interest in this Position (1-10):</label><br>
-            <input type="number" id="interest_level" name="interest_level">
+            <label for="interest_level">Rate Your Interest in this Position (1-10):</label>
+            <input type="range" id="points" name="points" min="0" max="10">
         </form>
+
     </div>
-    <button type="submit">Submit Application</button>
 </div>
+<center><button type="submit">Submit Application</button></center>
 </body>
 </html>

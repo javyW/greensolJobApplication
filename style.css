@@ -1,33 +1,55 @@
+.h1 {
+  text-align: center;
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: gainsboro;
     margin: 20px;
-}
-
-h1 {
-    text-align: center;
-}
-
-.container {
-    max-width: 1000px;
-    border: 25px solid gray;
+  }
+  
+  .container {
+    max-width: 800px;
     padding: 20px;
     margin: 0 auto;
+    border: 1px solid gray;
     background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
-  .defaultsection{
+  
+  .defaultsection {
     margin-bottom: 20px;
-    padding: 25px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+  } 
+
+  label {
+    display: block;
+    margin-bottom: 4px;
   }
-
-
-  /* input, select, textarea {
+  
+  input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-  } */
+    border: 1px solid lightgray;
+  }
   
+  input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: green;
+  }
+
   
