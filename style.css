@@ -1,15 +1,33 @@
-* {
-    text-align: left;
-}
-
-h1{
-    font-size: 300%
-    
-}
-
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: gainsboro;
-
+    margin: 20px;
 }
 
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    border: 25px solid gray;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  .defaultsection{
+    margin-bottom: 20px;
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+  }
+
+
+  /* input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  } */
+  
+  
