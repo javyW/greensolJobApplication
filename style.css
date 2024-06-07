@@ -1,54 +1,65 @@
-.h1 {
-  text-align: center;
+ body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #366CBD;
+  color: black;
 }
 
-body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 20px;
-  }
-  
-  .container {
-    max-width: 800px;
-    padding: 20px;
-    margin: 0 auto;
-    border: 1px solid gray;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .defaultsection {
-    margin-bottom: 20px;
-    border-bottom: 1px solid lightgray;
-    padding: 20px;
-  } 
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  color: black;
+}
 
-  label {
-    display: block;
-    margin-bottom: 4px;
-  }
-  
-  input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid lightgray;
-  }
-  
-  input[type="radio"], input[type="checkbox"] {
-    width: auto;
-    margin-right: 10px;
-  }
-  
-  button[type="submit"] {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: green;
-  }
+.container {
+  max-width: 800px;
+  padding: 20px;
+  margin: 40px auto;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.defaultsection {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button[type="submit"]:hover {
+  background-color: green;
+}
