@@ -41,7 +41,7 @@ body {
   
   button[type="submit"] {
     background-color: green;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -52,4 +52,3 @@ body {
     background-color: green;
   }
 
-  
