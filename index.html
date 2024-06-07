@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form id="greensoljobApplication" action="thankyou.html">
     <div class="container">
     <center><h1>Greensol Job Application Form</h1></center>
     <br>
     <hr>
 
         <div class="defaultsection">
-        <form>
             <h3>Personal Information</h3>
             <label for="Fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br>
+            <input type="text" id="fname" name="fname"  required><br>
 
             <label for="Lname">Last name:</label>
-            <input type="text" id="lname" name="Lname"><br>
+            <input type="text" id="lname" name="Lname" required><br>
     
             <label for="Tel">Phone number:</label>
-            <input type="number" id="tel" name="tel"><br>
+            <input type="number" id="tel" name="tel" required><br>
             
             <label for="Dob">Date of birth:</label>
-            <input type="date" id="ob" name="dob"><br>
+            <input type="date" id="ob" name="dob" required><br>
 
             <label for="Gender">Choose your Gender:</label><br>
-            <input type="radio" id="gender" name="gender">Male<br>
-            <input type="radio" id="gender" name="gender">Female<br>
-            <input type="radio" id="gender" name="gender">Non Binary<br>
+            <input type="radio" id="gender" name="gender" required>Male<br>
+            <input type="radio" id="gender" name="gender" required>Female<br>
+            <input type="radio" id="gender" name="gender" required>Non Binary<br>
             <br>
             <label for="Pfp">Profile Picture: </label>
             <input type="file" name="media">
-        </form>
     </div>
 
     <div class="defaultsection">
-        <form>
             <h3>Address</h3>
             <label for="Street">Street Address:</label>
             <input type="text" id="street" name="street" required><br>
@@ -54,13 +53,10 @@
 
             <label for="zip">ZIP Code:</label>
             <input type="text" id="zip" name="zip" required><br>
-
-        </form>
     </div>
 
 
     <div class="defaultsection">
-        <form>
             <h3>Education</h3>
             <label for="Education">Highest Level of Education:</label>
             <select id="Education" name="education" required>
@@ -78,13 +74,10 @@
 
             <label for="graduation_year">Graduation Year:</label>
             <input type="number" id="graduation_year" name="graduation_year" required><br>
-
-        </form>
     </div>
 
 
     <div class="defaultsection">
-        <form>
             <h3>Work Experience</h3>
             <div class="work-experience">
             <label for="company_name">Company Name:</label>
@@ -105,11 +98,9 @@
             <label for="currently_employed">Currently Employed Here:</label><br>
             <input type="radio" id="employed" name="Yes">Yes<br>
             <input type="radio" id="employed" name="No">No<br><hr>
-        </form>
     </div>
 
     <div class="skillssection">
-        <form>
             <h4>Skills</h4>
             <label for="skill_html">HTML</label>
             <input type="checkbox" id="skill_html" name="skills" value="html"><br>
@@ -134,11 +125,9 @@
 
             <label for="skill_other">Other Languages:</label>
             <input type="text" id="skill_other" name="skill_other">
-        </form>
     </div>
 
     <div class="defaultsection">
-        <form>
             <h3>Availability</h3>
             <label for="start_date">Start Date:</label>
             <input type="date" id="start_date" name="start_date" required><br>
@@ -157,11 +146,9 @@
 
             <label for="work_location_hybrid">Hybrid</label>
             <input type="radio" id="work_location_hybrid" name="work_location" value="hybrid">
-        </form>
     </div>
 
     <div class="defaultsection">
-        <form>
             <h2>References</h2>  
             <label for="reference_name">Reference Name:</label>
             <input type="text" id="reference_name" name="references[0][name]" required><br>
@@ -177,11 +164,9 @@
           
             <label for="reference_name2">Reference Name:</label>
             <input type="text" id="reference_name2" name="references[1][name]" required>
-        </form>
     </div>
 
     <div class="defaultsection">
-        <form>
             <h2>Additional Information</h2>
             <label for="linkedin_profile">LinkedIn Profile URL:</label>
             <input type="url" id="linkedin_profile" name="linkedin_profile"><br>
@@ -202,11 +187,23 @@
             <input type="checkbox" id="job_alerts" name="job_alerts">
 
             <label for="interest_level">Rate Your Interest in this Position (1-10):</label>
-            <input type="range" id="points" name="points" min="0" max="10">
-        </form>
-
+            <input type="range" id="points" name="points" min="0" max
     </div>
+    
 </div>
-<center><button type="submit">Submit Application</button></center>
+<center>
+    <button type="submit">Submit Application</button>
+</center>
+</form>
+</div>
+
+<script>
+document.getElementById('jobApplicationForm').addEventListener('submit', function(e) {
+if (!this.checkValidity()) {
+    e.preventDefault();
+    alert('Please fill out all required fields.');
+}
+});
+</script>
 </body>
 </html>
