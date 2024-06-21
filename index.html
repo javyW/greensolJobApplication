@@ -7,188 +7,181 @@
     <title>Greensol Job Application</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <form id="greensoljobApplication" action="thankyou.html">
-        <form id="greensoljobApplication" action="/submit-application" method="POST" enctype="multipart/form-data">
-    <div class="container">
-    <center><img src="Images/logoGreensol.png" width="auto" height="150"></center>
-    <center><h1>Greensol Job Application Job Form</h1></center>
-    <hr>
-    <br>
-        <div class="defaultsection">
-            <h3>Personal Information</h3>
-            <label for="Fname">First name:</label>
-            <input type="text" id="fname" name="fname"  required><br>
 
-            <label for="Lname">Last name:</label>
-            <input type="text" id="lname" name="Lname" required><br>
-    
-            <label for="Tel">Phone number:</label>
-            <input type="number" id="tel" name="tel" required><br>
-            
-            <label for="Dob">Date of birth:</label>
-            <input type="date" id="ob" name="dob" required><br>
-
-            <label for="Gender">Choose your Gender:</label><br>
-            <input type="radio" id="gender" name="gender" required>Male<br>
-            <input type="radio" id="gender" name="gender" required>Female<br>
-            <input type="radio" id="gender" name="gender" required>Non Binary<br>
+<body>  
+    <form id="greensoljobApplication" action="/submit-application" method="POST" enctype="multipart/form-data">
+        <div class="container">
+            <center><img src="Images/logoGreensol.png" width="auto" height="150"></center>
+            <center><h1>Greensol Job Application Job Form</h1></center>
+            <hr>
             <br>
-            <label for="Pfp">Profile Picture: </label>
-            <input type="file" name="media">
-    </div>
+            <div class="defaultsection">
+                <h3>Personal Information</h3>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br>
 
-    <div class="defaultsection">
-            <h3>Address</h3>
-            <label for="Street">Street Address:</label>
-            <input type="text" id="street" name="street" required><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br>
 
-            <label for="apt">Apartment Number (optional):</label>
-            <input type="text" id="apt" name="apt"><br>
+                <label for="tel">Phone number:</label>
+                <input type="tel" id="tel" name="tel" placeholder="Enter your phone number" required><br>
 
-            <label for="city">City:</label>
-            <input type="text" id="city" name="ity" required><br>
+                <label for="dob">Date of birth:</label>
+                <input type="date" id="dob" name="dob" placeholder="YYYY-MM-DD" required><br>
 
-            <label for="state">State:</label>
-            <input type="text" id="state" name="state" required><br>
+                <label>Choose your Gender:</label><br>
+                <input type="radio" id="gender_male" name="gender" value="Male" required><label for="gender_male">Male</label><br>
+                <input type="radio" id="gender_female" name="gender" value="Female"><label for="gender_female">Female</label><br>
+                <input type="radio" id="gender_nonbinary" name="gender" value="Non Binary"><label for="gender_nonbinary">Non Binary</label><br>
+                <br>
+                <label for="profile_picture">Profile Picture:</label>
+                <input type="file" id="profile_picture" name="profile_picture" accept="image/*" placeholder="Choose file">
+            </div>
 
-            <label for="zip">ZIP Code:</label>
-            <input type="text" id="zip" name="zip" required><br>
-    </div>
+            <div class="defaultsection">
+                <h3>Address</h3>
+                <label for="street">Street Address:</label>
+                <input type="text" id="street" name="street" placeholder="Enter your street address" required><br>
 
+                <label for="apt">Apartment Number (optional):</label>
+                <input type="text" id="apt" name="apt" placeholder="Apartment, suite, unit, etc."><br>
 
-    <div class="defaultsection">
-            <h3>Education</h3>
-            <label for="Education">Highest Level of Education:</label>
-            <select id="Education" name="education" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required><br>
 
-            <option value="">Select</option>
-            <option value="high_school">High School</option>
-            <option value="associates_degree">Associate's Degree</option>
-            <option value="bachelors_degree">Bachelor's Degree</option>
-            <option value="masters_degree">Master's Degree</option>
-            <option value="doctorate">Doctorate</option>
-            </select><br>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state" required><br>
 
-            <label for="major">Major:</label>
-            <input type="text" id="major" name="major" required><br>
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="zip" placeholder="Enter your ZIP code" required><br>
+            </div>
 
-            <label for="graduation_year">Graduation Year:</label>
-            <input type="number" id="graduation_year" name="graduation_year" required><br>
-    </div>
+            <div class="defaultsection">
+                <h3>Education</h3>
+                <label for="education">Highest Level of Education:</label>
+                <select id="education" name="education" required>
+                    <option value="">Select</option>
+                    <option value="high_school">High School</option>
+                    <option value="associates_degree">Associate's Degree</option>
+                    <option value="bachelors_degree">Bachelor's Degree</option>
+                    <option value="masters_degree">Master's Degree</option>
+                    <option value="doctorate">Doctorate</option>
+                </select><br>
 
+                <label for="major">Major:</label>
+                <input type="text" id="major" name="major" placeholder="Enter your major" required><br>
 
-    <div class="defaultsection">
-            <h3>Work Experience</h3>
-            <div class="work-experience">
-            <label for="company_name">Company Name:</label>
-            <input type="text" id="company_name" name="company_name" required><br>
-              
-            <label for="job_title">Job Title:</label>
-            <input type="text" id="job_title" name="job_title" required><br>
-              
-            <label for="start_date">Start Date:</label>
-            <input type="date" id="start_date" name="start_date" required><br>
-              
-            <label for="end_date">End Date (or leave blank if currently employed):</label>
-            <input type="date" id="end_date" name="end_date"><br>
-              
-            <label for="responsibilities">Job Responsibilities:</label>
-            <textarea id="responsibilities" name="responsibilities" rows="5" required></textarea><br>
-              
-            <label for="currently_employed">Currently Employed Here:</label><br>
-            <input type="radio" id="employed" name="Yes">Yes<br>
-            <input type="radio" id="employed" name="No">No<br><hr>
-    </div>
+                <label for="graduation_year">Graduation Year:</label>
+                <input type="number" id="graduation_year" name="graduation_year" placeholder="Enter your graduation year" required><br>
+            </div>
 
-    <div class="skillssection">
-            <h4>Skills</h4>
-            <label for="skill_html">HTML</label>
-            <input type="checkbox" id="skill_html" name="skills" value="html"><br>
+            <div class="defaultsection">
+                <h3>Work Experience</h3>
+                <label for="company_name">Company Name:</label>
+                <input type="text" id="company_name" name="company_name" placeholder="Enter company name" required><br>
 
-            <label for="skill_css">CSS</label>
-            <input type="checkbox" id="skill_css" name="skills" value="css"><br>
+                <label for="job_title">Job Title:</label>
+                <input type="text" id="job_title" name="job_title" placeholder="Enter your job title" required><br>
 
-            <label for="skill_javascript">JavaScript</label>
-            <input type="checkbox" id="skill_javascript" name="skills" value="javascript"><br>
+                <label for="start_date">Start Date:</label>
+                <input type="date" id="start_date" name="start_date" placeholder="YYYY-MM-DD" required><br>
 
-            <label for="skill_python">Python</label>
-            <input type="checkbox" id="skill_python" name="skills" value="python"><br>
+                <label for="end_date">End Date (or leave blank if currently employed):</label>
+                <input type="date" id="end_date" name="end_date" placeholder="YYYY-MM-DD"><br>
 
-            <label for="skill_java">Java</label>
-            <input type="checkbox" id="skill_java" name="skills" value="java"><br>
+                <label for="responsibilities">Job Responsibilities:</label>
+                <textarea id="responsibilities" name="responsibilities" rows="5" placeholder="Enter your job responsibilities" required></textarea><br>
 
-            <label for="skill_csharp">C#</label>
-            <input type="checkbox" id="skill_csharp" name="skills" value="csharp"><br>
+                <label>Currently Employed Here:</label><br>
+                <input type="radio" id="employed_yes" name="currently_employed" value="Yes" required><label for="employed_yes">Yes</label><br>
+                <input type="radio" id="employed_no" name="currently_employed" value="No"><label for="employed_no">No</label><br>
+                <hr>
+            </div>
 
-            <label for="skill_sql">SQL</label>
-            <input type="checkbox" id="skill_sql" name="skills" value="sql"><br>
+            <div class="defaultsection">
+                <h3>Skills</h3>
+                <label for="skill_html">HTML</label>
+                <input type="checkbox" id="skill_html" name="skills" value="html"><br>
 
-            <label for="skill_other">Other Languages:</label>
-            <input type="text" id="skill_other" name="skill_other">
-    </div>
+                <label for="skill_css">CSS</label>
+                <input type="checkbox" id="skill_css" name="skills" value="css"><br>
 
-    <div class="defaultsection">
-            <h3>Availability</h3>
-            <label for="start_date">Start Date:</label>
-            <input type="date" id="start_date" name="start_date" required><br>
+                <label for="skill_javascript">JavaScript</label>
+                <input type="checkbox" id="skill_javascript" name="skills" value="javascript"><br>
 
-            <label for="preferred_hours">Preferred Working Hours:</label>
-            <input type="text" id="preferred_hours" name="preferred_hours" required><br>
+                <label for="skill_python">Python</label>
+                <input type="checkbox" id="skill_python" name="skills" value="python"><br>
 
-            <label for="work_location">Preferred Work Location:</label> 
-            <input type="text" id="preferred_location" name="preferred_location" required><br>
+                <label for="skill_java">Java</label>
+                <input type="checkbox" id="skill_java" name="skills" value="java"><br>
 
-            <label for="work_location_remote">Remote</label>
-            <input type="radio" id="work_location_onsite" name="work_location" value="remote">
+                <label for="skill_csharp">C#</label>
+                <input type="checkbox" id="skill_csharp" name="skills" value="csharp"><br>
 
-            <label for="work_location_onsite">On-site</label>
-            <input type="radio" id="work_location_hybrid" name="work_location" value="on-sight">
+                <label for="skill_sql">SQL</label>
+                <input type="checkbox" id="skill_sql" name="skills" value="sql"><br>
 
-            <label for="work_location_hybrid">Hybrid</label>
-            <input type="radio" id="work_location_hybrid" name="work_location" value="hybrid">
-    </div>
+                <label for="skill_other">Other Languages:</label>
+                <input type="text" id="skill_other" name="skill_other" placeholder="Enter other skills"><br>
+            </div>
 
-    <div class="defaultsection">
-            <h2>References</h2>  
-            <label for="reference_name">Reference Name:</label>
-            <input type="text" id="reference_name" name="references[0][name]" required><br>
-          
-            <label for="reference_relationship">Relationship:</label>
-            <input type="text" id="reference_relationship" name="references[0][relationship]" required><br>
-          
-            <label for="reference_phone">Phone Number:</label>
-            <input type="tel" id="reference_phone" name="references[0][phone_number]"><br>
-          
-            <label for="reference_email">Email Address:</label>
-            <input type="email" id="reference_email" name="references[0][email_address]" required><br>
-          
-            <label for="reference_name2">Reference Name:</label>
-            <input type="text" id="reference_name2" name="references[1][name]" required>
+            <div class="defaultsection">
+                <h3>Availability</h3>
+                <label for="start_date_availability">Start Date:</label>
+                <input type="date" id="start_date_availability" name="start_date_availability" placeholder="YYYY-MM-DD" required><br>
+
+                <label for="preferred_hours">Preferred Working Hours:</label>
+                <input type="text" id="preferred_hours" name="preferred_hours" placeholder="Enter your preferred working hours" required><br>
+
+                <label for="preferred_location">Preferred Work Location:</label>
+                <input type="text" id="preferred_location" name="preferred_location" placeholder="Enter your preferred work location" required><br>
+
+                <label>Work Location:</label><br>
+                <input type="radio" id="work_location_remote" name="work_location" value="Remote"><label for="work_location_remote">Remote</label><br>
+                <input type="radio" id="work_location_onsite" name="work_location" value="On-site"><label for="work_location_onsite">On-site</label><br>
+                <input type="radio" id="work_location_hybrid" name="work_location" value="Hybrid"><label for="work_location_hybrid">Hybrid</label><br>
+            </div>
+
+            <div class="defaultsection">
+                <h3>References</h3>
+                <label for="reference_name">Reference Name:</label>
+                <input type="text" id="reference_name" name="references[0][name]" placeholder="Enter reference name" required><br>
+
+                <label for="reference_relationship">Relationship:</label>
+                <input type="text" id="reference_relationship" name="references[0][relationship]" placeholder="Enter relationship" required><br>
+
+                <label for="reference_phone">Phone Number:</label>
+                <input type="tel" id="reference_phone" name="references[0][phone_number]" placeholder="Enter phone number"><br>
+
+                <label for="reference_email">Email Address:</label>
+                <input type="email" id="reference_email" name="references[0][email_address]" placeholder="Enter email address" required><br>
+
+                <label for="reference_name2">Reference</label>
+            <input type="text" id="reference_name2" name="references[1][name]" required placeholder="Enter Reference">
     </div>
 
     <div class="defaultsection">
             <h2>Additional Information</h2>
             <label for="linkedin_profile">LinkedIn Profile URL:</label>
-            <input type="url" id="linkedin_profile" name="linkedin_profile"><br>
+            <input type="url" id="linkedin_profile" name="linkedin_profile" placeholder="Enter linkedin profile">
             
             <label for="github_profile">GitHub Profile URL:</label>
-            <input type="url" id="github_profile" name="github_profile"><br>
+            <input type="url" id="github_profile" name="github_profile" placeholder="Enter github profile"><br>
 
             <label for="why_work_here">Why Do You Want to Work Here?:</label>
-            <textarea id="why_work_here" name="why_work_here" rows="5"></textarea><br>
+            <textarea id="why_work_here" name="why_work_here" rows="5" placeholder="Enter reason for work"></textarea><br>
 
             <label for="resume">Upload Resume: </label>
-            <input type="file" id="resume" name="resume" accept=".pdf,.docx">
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx" >
 
             <label for="background_check">Consent to Background Check:</label>
-            <input type="checkbox" id="background_check" name="background_check">
+            <input type="checkbox" id="background_check" name="background_check" >
             
             <label for="job_alerts">Sign Up for Job Alerts:</label>
             <input type="checkbox" id="job_alerts" name="job_alerts">
 
             <label for="interest_level">Rate Your Interest in this Position (1-10):</label>
-            <input type="range" id="points" name="points" min="0" max
+            <input type="range" id="points" name="points" min="0" max="10">
     </div>
     
 </div>
