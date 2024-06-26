@@ -21,26 +21,38 @@ header {
     align-items: center;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+header .logo-img {
+    height: 60px;
+    margin-right: auto;
+}
+
+.header-icon {
+    height: 30px;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: center; 
-    flex-grow: 1; /* Allow nav links to take up remaining space */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links li {
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .nav-links li a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
@@ -49,11 +61,10 @@ header {
     color: black;
 }
 
-
 /* Main content styles */
 main {
-    display: flex;
-    padding: 20px;
+    display: flex; 
+    padding: 30px;
 }
 
 aside {
@@ -101,6 +112,11 @@ aside {
     background-color: #0056b3;
 }
 
+.job-card .job-icon {
+    height: 25px;
+    margin-left: 10px;
+}
+
 section.job-details {
     width: 75%;
     background-color: #fff;
@@ -113,19 +129,15 @@ section.job-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-.job-header img {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
+.job-header-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
     border-radius: 8px;
-}
-
-.job-header h1 {
-    font-size: 24px;
-    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .job-header button {
@@ -144,24 +156,56 @@ section.job-details {
 }
 
 .job-info {
-    margin-top: 20px;
+    position: relative;
 }
 
-.company-description, .job-description, .requirements {
-    margin-bottom: 20px;
+.icon-container {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    left: 1px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.job-info h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+.icon-container img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+.greensol-logo {
+    height: 50px;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media-icons .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.general-jobinfo h4, .general-jobinfo h5 {
+    margin: 10px 0;
+}
+
+.company-description {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .box {
-    background-color: #f0f0f0;
+    background-color: lightgray;
     color: #333;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 20px;
     border-radius: 8px;
     font-size: 14px;
     line-height: 1.4;
+    flex: 1 1 calc(25% - 20px);
 }
