@@ -22,8 +22,8 @@ header {
 }
 
 header .logo-img {
-    height: 60px;
-    margin-right: auto;
+    height: 80px;
+    margin-right: 80p0x;
 }
 
 .header-icon {
@@ -177,8 +177,8 @@ section.job-detailstwo {
 .icon-container img {
     border-radius: 50%;
     overflow: hidden;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
 }
 
 .greensol-logo {
@@ -240,4 +240,26 @@ section.job-detailstwo {
 
 .flex-container > div:nth-child(odd) {
     margin-right: 0px; /* Add margin only to odd-numbered elements for gap */
+}
+
+.flex-containertwo {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center;
+    width: 101%; /* Adjusted to fill the available width */
+    padding: 10px; /* Adjusted padding for inner content */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.flex-containertwo > div {
+    flex: 1; /* Each div takes equal space */
+    padding: 10px; /* Adjusted padding for inner content */
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Adding shadow for visual effect */
+    background-color: white;
+}
+
+.flex-containertwo > div + div {
+    margin-left: 15px; /* Adjusted gap between the two divs */
 }
