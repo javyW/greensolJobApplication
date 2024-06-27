@@ -63,7 +63,7 @@ nav {
 
 /* Main content styles */
 main {
-    display: flex; 
+    display: flex;
     padding: 30px;
 }
 
@@ -117,10 +117,16 @@ aside {
     margin-left: 10px;
 }
 
-section.job-details {
+.job-details-container {
     width: 75%;
+    height: 50%;
+}
+
+section.job-details,
+section.job-detailstwo {
     background-color: #fff;
     padding: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -163,7 +169,6 @@ section.job-details {
     position: absolute;
     bottom: 25px;
     right: 25px;
-    left: 1px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -190,7 +195,8 @@ section.job-details {
     height: 50px;
 }
 
-.general-jobinfo h4, .general-jobinfo h5 {
+
+.general-jobinfo h5 {
     margin: 10px 0;
 }
 
@@ -200,6 +206,9 @@ section.job-details {
     gap: 10px;
 }
 
+.section .job-icon{
+    height: 100%;
+}
 .box {
     background-color: lightgray;
     color: #333;
@@ -208,4 +217,27 @@ section.job-details {
     font-size: 14px;
     line-height: 1.4;
     flex: 1 1 calc(25% - 20px);
+}
+
+
+
+/* Updated CSS for smaller columns */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center;
+}
+
+.flex-container > div {
+    width: 24%;
+    background-color: white;
+    padding:10px; /* Adjusted padding for inner content */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adding shadow for visual effect */
+}
+
+.flex-container > div:nth-child(odd) {
+    margin-right: 0px; /* Add margin only to odd-numbered elements for gap */
 }
