@@ -2,6 +2,7 @@
 
 This repository contains the code for a job application form for greensol. 
 
+Images:
 ![Alt text](/mdImg/ss1.png)
 ![Alt text](/mdImg/ss2.png)
 ![Alt text](/mdImg/ss3.png)
